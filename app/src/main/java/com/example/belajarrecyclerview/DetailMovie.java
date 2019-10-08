@@ -12,7 +12,7 @@ public class DetailMovie extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_movie);
-
+getSupportActionBar().setDisplayShowHomeEnabled(true);
         String idDetail = getIntent().getStringExtra(KEY_MOVIE);
 
         Toast.makeText(this, idDetail, Toast.LENGTH_SHORT).show();
